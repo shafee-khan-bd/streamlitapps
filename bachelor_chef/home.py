@@ -1,10 +1,5 @@
+import openai
 import streamlit as st
-package = 'openai'
-try:
-    return __import__(package)
-except ImportError:
-    return None
-
 from functools import lru_cache
 import plotly.express as px
 from skimage import io
