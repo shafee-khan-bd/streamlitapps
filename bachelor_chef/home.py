@@ -1,5 +1,10 @@
 import streamlit as st
-import openai
+try:
+  import openai
+except:
+  !pip install openai
+  import openai
+
 from functools import lru_cache
 import plotly.express as px
 from skimage import io
