@@ -2,7 +2,7 @@ import streamlit as st
 try:
   import openai
 except:
-  !pip install openai
+  pip install openai
   import openai
 
 from functools import lru_cache
